@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+
+  </head>
+  <body>
+
+    <div class="container w-75 mt-5 p-5">
+      <h1 class="text-center text-primary-emphasis fw-bolder">Customer Transactions</h1>
+      <div class="search-input mb-5">
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control rounded-pill"
+            id="searchInput"
+            placeholder="search By name or amount"
+          />
+          <label for="floatingInput">search</label>
+        </div>
+      </div>
+      <div class="table-container d-flex align-items-center h-100">
+        <table class="table table-hover table-bordered table-responsive">
+          <thead class="table-primary">
+            <tr class="text-center">
+              <th >User ID</th>
+              <th>Name</thclass>
+              <th>Transaction</th>
+              <th>Date</th>
+              <th class="text-center">chart</th>
+            </tr>
+          </thead>
+          <tbody id="data"></tbody>
+        </table>
+
+      </div>
+      <div >
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+   <div>
+  </di>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
