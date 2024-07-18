@@ -1,8 +1,6 @@
 const dataRow = document.getElementById("data");
 let transactions = [];
 let customers = [];
-// let customersName = [];
-// let data = [];
 let myChart;
 //~====get data from api====~//
 async function transictions() {
