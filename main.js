@@ -4,12 +4,12 @@ let customers = [];
 let myChart;
 //~====get data from api====~//
 async function transictions() {
-  let response = await fetch(`http://localhost:3000/transactions`);
+  let response = await fetch(`https://metal-plucky-earwig.glitch.me/transactions`);
   transactions = await response.json();
   return transactions;
 }
 async function customer() {
-  let response = await fetch(`http://localhost:3000/customers`);
+  let response = await fetch(`https://metal-plucky-earwig.glitch.me/customers`);
   customers = await response.json();
   return customers;
 }
